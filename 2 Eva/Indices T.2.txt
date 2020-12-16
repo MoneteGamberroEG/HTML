@@ -1,0 +1,27 @@
+1: Metodos SLIDE, ocultar y mostrar imagen con efectos
+2: Coordenadas del Raton por pantalla
+3: Añade imagen con boton y referencia a otra pagina
+4: Crea botones con funciones a un div
+5: Desplaza la imagen de fondo hacia los lados
+6: Cambia el grosor del recuadro span
+7: Links a otras paginas 
+8: Imprime click derecho e izquierdo & Texto comprimido
+9: Oculta y muestra un div
+10: Animacion de div
+11: Animacion de div con texto
+12: Expandir panel div y un boton para pararlo antes de acabar
+13: Animacion de div al iniciar la pagina
+14: Añade imagen al body con link a otro documento
+15: Imprime nombre y codigo de la tecla apretada y cuando se libera
+16: 15 pero con la funcion 'on.'
+17: Cambia de color el div al poner el raton encima
+18: Muestra los divs ocultos al poner el raton encima del texto
+19: Oculta y muestra imagen y boton al darle a los botones
+20: Oculta y muestra el div con un boton
+21: Menu con pestañas y contenido y Marcas021.css
+22: Pasa a la imagen anterior y siguiente con el boton repitiendose
+23: Va cambiando de imagenes y texto cada x tiempo
+24: Formulario
+25: Menu desplegable y Marcas025.css
+26: Menu desplegable distinta forma y Marcas026.css
+27: 

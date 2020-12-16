@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Eventos de raton 2 (Eventos en general)</title>
+<script language="JavaScript" type="text/javascript" src="jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).on("mousemove", function(e){
+			$("#divCoordenadas").html("<strong>" + e.pageX + "</strong> - <strong>" + e.pageY + "</strong>");
+		});
+		$(document).on("contextmenu", function(e){
+			e.preventDefault(); //Eliminamos el menu contextual que sale al darle click derecho a la pagina
+			$("#divEstado").html("<strong>Click derecho</strong>");
+		});
+		$(document).on("click", function(e){
+			$("#divEstado").html("<strong>Click izquierdo</strong>");
+		});
+		$("#divScroll").on("scroll", function(e){
+			$("#divEstado").html("<strong>Scroll detectado</strong>");
+		});
+	});
+	</script>
+	<style type="text/css">
+		#divScroll{margin:20px 0 padding:10px; overflow: scroll; height: 100px; border-radius: 15px; box-shadow: 1px 1px 10px #c0c0c0; float: right;}
+		#divCoordenadas{border: solid 1px #ccc; padding: 10px; width: 200px; text-align: center; border-radius: 15px; box-shadow: 1px 1px 10px #c0c0c0;}
+		#divEstado{padding: 10px; width: 200px; text-align: center; border-radius: 15px; box-shadow: 1px 1px 10px #c0c0c0; float: right;}
+	</style>
+</head>
+<body>
+<div id="divCoordenadas"></div>
+<div id="divEstado"></div>
+<div id="divScroll">
+<p>
+	Los primeros homínidos llegaron al territorio de la actual España hace 1,2 millones de años aproximadamente. Se sucedieron varias especies, como Homo antecessor, los preneandertales de la Sima de los Huesos (identificados en un principio como Homo heidelbergensis) y los neandertales (Homo neanderthalensis), hasta que hace unos 35 000 años los humanos modernos (Homo sapiens) entraron en la península ibérica y fueron desplazando a estos últimos, con los que aún coexistirían durante cerca de 10 000 años. Hace unos 27 000 se extinguieron las últimas poblaciones neandertales en el sur. Durante los milenios siguientes el territorio fue lugar de asentamiento de pueblos íberos, celtas, fenicios, cartagineses, griegos y hacia el 200 a. C. la península comenzó a formar parte de la República Romana, constituyendo la Hispania romana. Tras la caída de Roma, se estableció el Reino visigodo. Dicha monarquía visigótica se inició en el siglo v y se mantuvo hasta comienzos del siglo viii. En el año 711 se produjo la primera conquista musulmana desde el Norte de África; en pocos años el islam dominaba gran parte de la península ibérica. Durante los 750 años siguientes, el reino dominado por musulmanes sería conocido como al-Ándalus, y mientras gran parte del resto de Europa permanecía en los años oscuros, Al-Ándalus experimentaba un esplendoroso florecimiento multicultural, científico y artístico.
+</p>
+<p>
+	 De modo paulatino, se produjo la Reconquista, y los reinos cristianos arrebataron progresivamente el territorio a los musulmanes. Comenzada aproximadamente en 722 con la rebelión de Don Pelayo y partiendo desde el norte, avanzó durante los siglos viii a xv culminando con la conquista de Granada en 1492. Durante este periodo los reinos cristianos se desarrollaron notablemente; la unión de los dos más importantes, Castilla y Aragón, por el matrimonio en 1469 de los Reyes Católicos, Isabel I de Castilla y Fernando II de Aragón, posibilitaría la unificación de España y el fin de la Reconquista.
+</p>
+<p>
+	En 1492 los Reyes Católicos financiaron el proyecto del navegante Cristóbal Colón en la búsqueda de una nueva ruta comercial con Asia a través del océano Atlántico, y proclamarían la expulsión de los judíos. La llegada al Nuevo Mundo y la posterior conquista de América forjaron la creación del Imperio español. Durante los siguientes siglos España se alzaría como actor principal del mundo occidental y primera potencia de la época. Durante los siglos xvi y xvii tendría lugar también la época de mayor apogeo de la cultura y las artes hispanas conocida como Siglo de Oro.
+</p>
+</div>
+</body>
+</html>

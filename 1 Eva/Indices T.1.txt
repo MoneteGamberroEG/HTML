@@ -1,0 +1,24 @@
+1: Imagen de fondo
+2: Encabezados y estilo de letra
+3: Indices de texto
+4: Enlaces a otras paginas u otra posicion de la pagina
+5: Tablas y estilos de tablas
+6: Formulario (tabla para escribir, desplegables, seleccion...)
+7: Estilos de texto
+8: Hidden y mostrar texto al clickar
+9: Cambiar color al clickar (3 en raya)
+10: 3 en raya con imagenes al clickar
+11: Intercambiar con un boton dos imagenes con texto
+12: Desplazar una imagen continuamente
+13: Mostrar todos los elementos que contiene el HTML
+14: Desplazar imagenes donde quieras clickando en ellas
+15: Acertijos de los numeros
+16: Desplazar imagenes dandole a un boton
+17: Quemar la papelera con la cerilla
+18: Cambiar la imagen al pasar con el raton por encima de ella
+19: Cambiar la imagen al darle a un boton
+20: Segun la division entre 4, poner una imagen u otra de fondo
+21: Reloj digital
+22: Una foto cada segundo, y pararlo cuando le des a un boton
+23: Calculadora
+24: Arquero

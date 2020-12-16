@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Galeria de Imagenes</title>
+<style type="text/css">
+	div{width: 600; height: 400; overflow: hidden;}
+	ul, li{padding: 0px; margin: 0px}
+	li{float: left; list-style: none;}
+</style>
+<script type="text/javascript" src="jquery-1.11.2.min.js">  </script>
+<script>
+	$(document).ready(function(event){
+		$("#next").click(function(){
+			$("#galeria li:first").appendTo("#galeria:first");
+
+		});
+		$("#before").click(function(){
+			$("#galeria li:last").prependTo("#galeria:first");
+
+		});
+	});
+  </script>
+</head>
+<body>
+	<div>
+			<ul id="galeria">
+			<li><img src="imagenes/1.jpg" width="600" height="400"></li>
+			<li><img src="imagenes/2.jpg" width="600" height="400"></li>
+			<li><img src="imagenes/3.jpg" width="600" height="400"></li>
+		</ul>
+</div>
+<button id="next">Siguiente</button>
+<button id="before">Anterior</button>
+</body>
+</html>
+
+</html>

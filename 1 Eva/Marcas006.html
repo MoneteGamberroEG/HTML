@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Formularios</title>
+</head>
+<body>
+<h1 align="center">Trabajando con formularios</h1>
+<form action="programa.php" method="post"><!--la función action está conectada con la función submit y envía la información donde le diga la propiedad action,
+ y se envían los datos a traves del post-->
+<table align="center" border="1" cellspacing="5">
+<tr>
+	<td align="right">Introduce tu nombre: </td>
+	<td><input type="text" size="50" maxlength="10" id="nombre" name="nombre"></td>
+
+</tr>
+<tr>
+	<td align="right">Provincia : </td>
+	<td><select>
+		<option value="22">Huesca</option>
+		<option value="44">Teruel</option>
+		<option value="50"selected>Zaragoza</option>
+	</select></td>
+</tr>
+<tr>
+	<td align="right">Edad : </td>
+	<td>Mayor de 60<input name="edad" type="radio" value=1>
+	Entre 30 y 60<input name="edad" type="radio" value2>
+	Menor de 30<input name="edad" type="radio" value=3></td>
+</tr>	
+<tr>
+	<td align="right">Deportes : </td>
+	<td>Balonmano<input name="deportes" type="checkbox" value=1>
+	Baloncesto<input name="deportes" type="checkbox" value2>
+	Fútbol<input name="deportes" type="checkbox" value=3></td>
+</tr>
+<tr>
+	<td align="right">Comentario : </td>
+	<td><textarea name="Comentario" cols="40" rows="4">Escribe un comentario...</textarea>
+</tr>
+<tr>
+	<td><input type="reset" value="Limpiar"></td>
+	<td><input type="submit" value="Enviar"></td>
+</tr>
+</table>
+</body>
+</html>

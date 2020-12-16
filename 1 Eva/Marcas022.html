@@ -1,0 +1,21 @@
+<html>
+<head>                                           
+<title>Parar un Intervalo</title>
+<script language="JavaScript">
+function para(){
+    clearInterval(objeto);
+}
+function cambiar(){
+    if(imagen.src = "file:///C:\Users\ALEJANDRO\Desktop\GRADO\Lenguaje de Marcas/Imagenes/0.jpg")
+        imagen.src = "Imagenes/1.jpg";
+    else
+        imagen.src = "Imagenes/0.jpg";
+}
+</script>
+</head>
+<body onload="objeto = setInterval('cambiar()', 2000)">
+<img id="imagen" src="Imagenes/0.jpg" width="300" height="300">
+    
+    <input type = "button" value ="Parar" onclick="parar()">
+</body>
+</html>

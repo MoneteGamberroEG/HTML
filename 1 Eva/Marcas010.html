@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>tres en raya</title>
+<style type="text/css">
+    .val{background-color: yellow;width: 30;height: 35; text-align: center}
+    .noval{background-color: lime;width: 30;height: 35; text-align: center}
+    </style>
+<script language="JavaScript">
+    contador=0;
+    function change(){
+        objeto = event.srcElement; //Elemento sobre el que se ha producido el evento.
+        if(objeto.className== "val"){
+            if(contador==0){
+                objeto.innerHTML = "<img src=imagenes/cross.png width=30 height=35>";//recibe un string con lo que queremos que aparezca en un objeto que tiene marca de apertura y marca de cierre
+                
+            }else{
+                objeto.innerHTML = "<img src=imagenes/circle.png width=30 height=35>";
+
+            }
+            contador = (contador+1) %2;
+    
+            
+        }
+        
+        }
+        
+</script>
+</head>
+<body onclick="change()">
+<h1 align="center">tres en raya</h1>
+<table align="center" border="5" cellpadding="0" cellspacing="5">
+    <tr>
+        <td class="val"></td><td class="val"></td><td class="val"></td>
+    </tr>
+    <tr>
+        <td class="val"></td><td class="val"></td><td class="val"></td>
+    </tr>
+    <tr>
+        <td class="val"></td><td class="val"></td><td class="val"></td>
+    </tr>
+    
+</table>
+</body>
+</html>

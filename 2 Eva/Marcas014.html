@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Añadir en el BODY</title>  
+
+<script type="application/javascript" src="jquery-1.11.2.min.js"></script>
+<script language= "JavaScript">
+
+var imagen = $("<img>", {src: "imagenes/flor.jpg", id:"imagen", 
+                        css: {"padding": "2px", "cursor": "pointer", "width": "100px"},
+                         click:function(e){
+                            document.location="Marcas013.html";
+                        }
+            });
+    
+$(document).ready(function(){ 
+    $("#boton").click(function(){
+        $("body").append(imagen);
+        
+    });
+});
+</script>  
+<style>
+
+</style>
+<body>
+<input type="button" id = "boton" value="Añadir">
+</body> 
+</head>
+</html>

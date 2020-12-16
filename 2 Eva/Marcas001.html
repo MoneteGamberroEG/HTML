@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Métodos Slide</title>
+    <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+    <script language="JavaScript">
+      $(document).ready(function () {
+        $("#deslizar").click(function (event) {
+          $("#rectangulo").slideUp(4000);
+        });
+        $("#deslizar2").click(function (event) {
+          $("#rectangulo").slideDown(4000);
+        });
+        $("#lento").click(function (event) {
+          $("#rectangulo").slideUp("slow");
+        });
+        $("#ConMensaje").click(function (event) {
+          $("#rectangulo").slideUp(4000);
+          alert("Efecto Terminado");
+        });
+        $("#toggle").click(function (event) {
+          $("#rectangulo").slideToggle(4000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="button" id="deslizar" value="Ocultar en 4000 milisegundos" />
+    <input type="button" id="deslizar2" value="Mostrar en 4000 milisegundos" />
+    <input type="button" id="lento" value="Ocultar Rapido" />
+    <input type="button" id="ConMensaje" value="Mensaje Final" />
+    <input type="button" id="toggle" value="Efecto Slide Toggle" />
+    <div id="rectangulo" style="padding: 30px 30px 30px 300px; background-color: greenyellow">
+      <img src="imagenes/zidane.jpg" />
+  </div>
+  </body>
+</html>

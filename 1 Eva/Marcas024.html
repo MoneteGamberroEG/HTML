@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Robin Hood</title>
+<style type="text/css">
+img{position:absolute}
+</style>
+<script language="JavaScript">
+function subir(){
+	globo.style.top = parseInt(globo.style.top) - 8;
+	if(parseInt(globo.style.top) < -150)
+		globo.style.top = 700;
+	flecha.style.left = parseInt(flecha.style.left) + 20;
+
+	if(!(((parseInt(flecha.style.left) + flecha.width) < parseInt(globo.style.left)) || 
+		(parseInt(flecha.style.left) > (parseInt(globo.style.left) + globo.width)) ||
+		((parseInt(flecha.style.top) + flecha.height) < parseInt(globo.style.top)) ||
+		(parseInt(flecha.style.top) > (parseInt(globo.style.top) + globo.height)))){
+			globo.style.display = "none";
+	}
+
+
+}
+function disparar(){
+	flecha.style.top = event.y - 50;
+	flecha.style.left = 150;
+}
+function mover(){
+	if (event.y >= 90)
+		robin.style.top = event.y - 90;
+}
+</script>
+</head>
+<body onload="setInterval('subir()', 100)" onmousemove="mover()" onclick="disparar()">
+<img id="globo" src="Imagenes/globo.png" height=150 style="top:700; left:1200">
+<img id="robin" src="Imagenes/arquero.png" height=180 style="top:300; left:50">
+<img id="flecha" src="imagenes/flecha.png" width=60 style="top:-100; left:150">
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+	margin: 0px;
+} 
+#barraHorizontal{
+	width: 960px;
+	height: 30px;
+	margin: auto;
+	background-color: #4ba;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 0px 0px 5px #000 inset; /*inset es para sombra interna*/
+	position: relative;
+	z-index: 2;
+}
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;	
+}
+#menu>li{
+	display: inline-block;
+	padding: 5px;
+	margin: 0px 10px 0px 10px;
+}
+.panel{
+	background-color: rgb(7%, 42%, 38%);
+	color: #fff;
+	width: 150px;
+	height: 200px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px #000 inset, 0px 0px 5px #000; 
+	padding-top: 100px;	
+	position: relative;
+	transition: all ease 2s;
+	transform-style: preserve-3d; 
+
+	
+	
+}

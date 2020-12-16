@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>noticias</title>
+<style type="text/css">
+    .bloque1{position: absolute; width: 300px; top: 50px;left: 20px;background-color: skyblue}
+    .bloque2{position: absolute; width: 300px; top: 50px;left: 400px;background-color: firebrick}
+    </style>
+<script language="JavaScript">
+   claseAux;
+
+    function change(){
+      
+        claseAux = b1.className;
+        b1.className = b2.className;
+        b2.className = claseAux;
+        
+        }
+        
+</script>
+</head>
+<body>
+<div class="bloque1" id="b1">
+<img src="Imagenes/deaths.jpg" height="150">    
+    Death Stranding y el sentido del humor "Made in Kojima"
+11 de octubre de 2019
+Death Stranding para PS4 no estará desprovisto del característico humor con el que Kojima dota a sus juegos. Recordamos algunos de los momentos más sorprendentes.
+    </div>
+<div class="bloque2" id="b2">
+<img src="Imagenes/magenes/casap.jpg" height="150">    
+    La casa de papel contará con una quinta temporada en Netflix
+14 de octubre de 2019
+Ya se ha confirmado que La casa de papel contará con una quinta temporada, a pesar de que aún se está rodando la cuarta tanda de capítulos de la serie.
+    </div>
+<input type="button" value="intercambio" Onclick="change()">
+</body>
+</html>

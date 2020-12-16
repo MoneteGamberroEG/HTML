@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Galeria de Imagenes 2</title>
+<style type="text/css">
+#galeria{width: 600; height: 400; overflow: hidden; position: relative; border: 10px solid #333; margin: 0 auto; padding: 0; border-radius: 40px;}
+#galeria p{position: absolute; left: 100; bottom: 30px; width: 400px; height: 24px; padding: 5px; background: #990000; font-size: 22px; color: #eee; text-align: center; line-height: 22px; opacity: 0.55}
+</style>
+<script type="text/javascript" src="jquery-1.11.2.min.js">  </script>
+<script>
+	$(document).ready(function(event){
+		$("#galeria div:gt(0)").hide(); //gt(0)excluye ese elemento
+		setInterval(function(){
+			$("#galeria div:first-child").fadeOut()
+			.next("div").fadeIn()
+			.end()
+			.appendTo("#galeria");
+		}, 500);
+	});
+  </script>
+</head>
+<body>
+	<div id="galeria">
+		<div><img src="imagenes/1.jpg" width="600" height="400"><p>Calvo 1</p></div>
+		<div><img src="imagenes/2.jpg" width="600" height="400"><p>Calvo 2</p></div>
+		<div><img src="imagenes/3.jpg" width="600" height="400"><p>Calvo 3</p></div>
+</div>
+</body>
+</html>

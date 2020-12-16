@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Eventos de Ratón</title>
+<script type="text/javascript" src="jquery-1.11.2.min.js">  </script>
+<script language="JavaScript">
+   
+    $(document).ready(function(){
+      $("#ocultar").click(function(event){
+          $("#rectangulo").fadeOut(4000);
+      });
+     $("#mostrar").click(function(event){
+          $("#rectangulo").fadeIn(4000,"swing", function(){
+              alert("se acabó");
+          });
+      });
+        
+        $("#mostrar2").click(function(event){
+          $("#rectangulo").fadeTo(2000,0.5, function(){
+              alert("se acabó");
+          });
+      });
+         $("#toggle").click(function(event){
+          $("#rectangulo").fadeToggle(4000, function(){
+              alert("se acabó");
+          });
+      });
+    });
+   
+  </script>
+</head>
+<body>
+    <div id="rectangulo" style="padding: 10px 10px 10px 10px; background-color: #000"> Rectangulo de ejemplo</div>
+    <input type="button" id="ocultar" value="Ocultar con FadeOut()"> 
+    <input type="button" id="mostrar" value="Mostrar con FadeIn()">
+    <input type="button" id="mostrar2" value="Mostrar con FadeTo()"> 
+    <input type="button" id="toggle" value="Mostrar con FadeToogle()"> 
+
+</body>
+</html>

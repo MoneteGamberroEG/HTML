@@ -1,0 +1,32 @@
+<html>
+<head>                                           
+<title>Reloj digital con JavaScript</title>
+
+
+    
+<script language="JavaScript">
+
+    //ver la diferencia entre srtTime interval/out
+    
+ function reloj (){
+   var fecha =new Date();
+    var hora = fecha.getHours();
+     var minutos = fecha.getMinutes();
+     var segundos = fecha.getSeconds();
+     var horaStr = "";
+    horaStr += ((hora<10)?"0":"") + hora;
+    horaStr += ((minutos<10)?":0":":") + minutos;
+    horaStr += ((segundos<10)?":0":":") + segundos;
+     caja.value = horaStr;
+     setTimeout("reloj()", 1000);
+    
+ }
+</script>
+</head>
+<body onload="reloj()">
+<h1 align="center">Rejoj digital JavaScript</h1>
+<center>
+<input id="caja" size="8">
+</center>    
+</body>
+</html>

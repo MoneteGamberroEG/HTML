@@ -1,0 +1,21 @@
+<html>
+<head>                                           
+<title>Trabajando con eventos</title>
+<script language="JavaScript">
+var n = 0;
+ function cambiar(){
+     n = ++n % 2;
+     if(n == 1)
+         imagen.src = "Imagenes/gal.jpg";      
+     else
+         imagen.src = "Imagenes/scarlett.jpg";
+ }
+</script>
+</head>
+<body>
+<h1 align="center"> Evento click sobre un botón</h1>
+<img id="imagen" onmouseover="cambiar()" src= "Imagenes/scarlett.jpg" height="150" width="150">
+<input type="button" value="cambiar" Onclick="cambiar()">
+
+</body>
+</html>
